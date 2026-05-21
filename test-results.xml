@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="5.519" tests="2" failures="0">
-  <testsuite name="Root Suite" timestamp="2026-05-19T20:55:38" tests="0" file="cypress\e2e\login.cy.ts" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="4.133" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-05-21T23:57:29" tests="0" file="cypress\e2e\login.cy.ts" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Login" timestamp="2026-05-19T20:55:38" tests="2" time="5.517" failures="0">
-    <testcase name="Login Realizar login com sucesso" time="2.522" classname="Realizar login com sucesso">
+  <testsuite name="Login" timestamp="2026-05-21T23:57:29" tests="2" time="4.130" failures="0">
+    <testcase name="Login Realizar login com sucesso" time="2.820" classname="Realizar login com sucesso">
     </testcase>
-    <testcase name="Login Realizar login informando credenciais inválidas" time="1.197" classname="Realizar login informando credenciais inválidas">
+    <testcase name="Login Realizar login informando credenciais inválidas" time="1.080" classname="Realizar login informando credenciais inválidas">
     </testcase>
   </testsuite>
 </testsuites>

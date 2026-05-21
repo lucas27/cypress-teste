@@ -1,0 +1,135 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-05-21T23:52:43.322Z",
+    "end": "2026-05-21T23:52:45.796Z",
+    "duration": 2474,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "240b7400-34c7-424f-8913-b0f6ff89d586",
+      "title": "",
+      "fullFile": "cypress\\e2e\\carrinho.cy.ts",
+      "file": "cypress\\e2e\\carrinho.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e009e024-86aa-4c12-979b-8f615252cbd5",
+          "title": "Carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adicionar produto ao carrinho com sucesso",
+              "fullTitle": "Carrinho Adicionar produto ao carrinho com sucesso",
+              "timedOut": null,
+              "duration": 2612,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\carrinho.cy.ts\\\\Carrinho -- Adicionar produto ao carrinho com sucesso -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "// Arrang\n// cy.visit('https://www.saucedemo.com/')\n// cy.get('[data-test=\"username\"]').type('standard_user')\n// cy.get('[data-test=password]').type('secret_sauce')\n// cy.get('[data-test=\"login-button\"]').click()\n// Act\n// cy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click()\n// cy.screenshot('produto adicionado')\n// // Assert\n// cy.get('.shopping_cart_badge')\n//     .should('be.visible')\n//     .and('have.text', '1')\n// cy.get('#shopping_cart_container').click()\n// cy.contains('Sauce Labs Backpack').should('be.visible')\nindex_js_3.default.adicionarProduto('Sauce Labs Backpack');\nconst qtdItensAdicionados = 1;\nindex_js_2.default.validarQueCarrinhoPossuiItens(qtdItensAdicionados);\nindex_js_1.default.validarProdutoPresenteNoCarrinho('Sauce Labs Backpack');",
+              "err": {
+                "message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Carrinho`",
+                "estack": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Carrinho`\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:117663:68)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146482:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress/./cypress/pages/login/index.ts:12:32)\n    at getRet (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:122944:20)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:122955:66)\n    at Context.then (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:123206:21)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146482:19)",
+                "diff": null
+              },
+              "uuid": "91a6f10e-c1de-4a49-b133-7fe1c41b6f70",
+              "parentUUID": "e009e024-86aa-4c12-979b-8f615252cbd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remover produto do carrinho com sucesso",
+              "fullTitle": "Carrinho Remover produto do carrinho com sucesso",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Arrang\n// cy.visit('https://www.saucedemo.com/')\n// cy.get('[data-test=\"username\"]').type('problem_user')\n// cy.get('[data-test=\"password\"]').type('secret_sauce')\n// cy.get('[data-test=\"login-button\"]').click()\n// cy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click()\nindex_js_3.default.adicionarProduto('Sauce Labs Backpack');\n// cy.get('.shopping_cart_badge')\n//     .should('be.visible')\n// Act\n// cy.get('[data-test=\"remove-sauce-labs-backpack\"]').click()\nindex_js_3.default.removerProduto('Sauce Labs Backpack');\n// Assert\n// cy.get('.shopping_cart_badge').should('not.exist')\nindex_js_2.default.validarQueCarrinhoNaoPossuiItens();\n// cy.screenshot('produto removido')",
+              "err": {},
+              "uuid": "ba65ab8b-812f-4b40-876a-606f3bb982e2",
+              "parentUUID": "e009e024-86aa-4c12-979b-8f615252cbd5",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "91a6f10e-c1de-4a49-b133-7fe1c41b6f70"
+          ],
+          "pending": [],
+          "skipped": [
+            "ba65ab8b-812f-4b40-876a-606f3bb982e2"
+          ],
+          "duration": 2612,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "charts": true,
+        "reportPageTitle": "Relatório de Testes",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

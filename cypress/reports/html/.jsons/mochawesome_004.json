@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-21T23:57:29.240Z",
+    "end": "2026-05-21T23:57:33.373Z",
+    "duration": 4133,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea5d42eb-239c-444a-a468-52b355ae0951",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.ts",
+      "file": "cypress\\e2e\\login.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a97425b-c81d-4f69-9da0-a806e47f930d",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar login com sucesso",
+              "fullTitle": "Login Realizar login com sucesso",
+              "timedOut": null,
+              "duration": 2820,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\login.cy.ts\\\\acesso a página de inventário.png\"\n    ]\n  ]\n}",
+              "code": "// Arrang\n// cy.visit('https://www.saucedemo.com/')\n// Act\n// cy.get('[data-test=\"username\"]').type('standard_user')\n// cy.get('[data-test=password]').type('secret_sauce')\n// cy.get('[data-test=\"login-button\"]').click()\nindex_js_1.default.preencherCredenciaisValidas();\nindex_js_2.default.validarAcessoAPagina();\n// Assert\n// cy.url().should('eq', 'https://www.saucedemo.com/inventory.html')\n// cy.screenshot('login')",
+              "err": {},
+              "uuid": "67f3f4bb-09ee-41f9-aab0-afc2d1908408",
+              "parentUUID": "5a97425b-c81d-4f69-9da0-a806e47f930d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar login informando credenciais inválidas",
+              "fullTitle": "Login Realizar login informando credenciais inválidas",
+              "timedOut": null,
+              "duration": 1080,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\login.cy.ts\\\\erro credenciais inválidas.png\"\n    ]\n  ]\n}",
+              "code": "// Arrang\n// cy.visit('https://www.saucedemo.com/')\n// Act\n// cy.get('[data-test=\"username\"]').type('user.invalid')\n// cy.get('[data-test=password]').type('senha')\n// cy.get('[data-test=\"login-button\"]').click()\nindex_js_1.default.preencherCredenciaisInvalidas();\nindex_js_1.default.validarErroCredenciaisInvalidas();\n// cy.screenshot('erro credenciais inválidas')\n// // Assert\n// cy.get('[data-test=\"error\"]')\n//     .should(\n//         'contain.text',\n//         'Username and password do not match any user in this service'\n//     )\n// cy.url().should('eq','https://www.saucedemo.com/')",
+              "err": {},
+              "uuid": "c12424b4-d90a-4dfc-9b25-0456a0d73f05",
+              "parentUUID": "5a97425b-c81d-4f69-9da0-a806e47f930d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67f3f4bb-09ee-41f9-aab0-afc2d1908408",
+            "c12424b4-d90a-4dfc-9b25-0456a0d73f05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3900,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "charts": true,
+        "reportPageTitle": "Relatório de Testes",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
