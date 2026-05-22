@@ -9,9 +9,9 @@ class Login {
 
     preencherCredenciaisValidas() {
         cy.env(['username', 'password']).then(({username, password}) => {
-            cy.get(el.username).type(username)
+            cy.get(el.username).type(username || 'standard_user')
             
-            cy.get(el.password).type(password)
+            cy.get(el.password).type(password || 'secret_sauce')
 
         })
         // cy.get(el.username).type(Cypress.env('username'))
